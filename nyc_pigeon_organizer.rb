@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data)
    hash.each do |property, array|
      array.each do |name|
         pigeons[name] ||= {}
-        pigeons[name][property] ||= []
-        pigeons[name][property] << detail.to_s
+        pigeons[name][category] ||= []
+        pigeons[name][category] << property.to_s
       end
       end
     end
