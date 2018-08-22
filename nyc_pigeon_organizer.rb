@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
      array.each do |name|
         new_hash[name] ||= {}
         new_hash[name][category] ||= []
-        new_hash[name][category] << property
+        new_hash[name][category] << property.to_s
       end
       end
     end
