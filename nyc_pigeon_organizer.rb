@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
         new_hash[name][category] = { }
       end
       if !new_hash[name].include?(property)
-        new_hash[name][category] << property
+        new_hash[name][category] << property.to_s
       end
       end
     end
